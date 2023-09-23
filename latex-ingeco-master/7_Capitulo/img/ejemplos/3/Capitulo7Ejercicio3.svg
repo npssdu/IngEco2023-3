@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 260 260" style="enable-background:new 0 0 260 260;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#5E5E5E;stroke-miterlimit:10;}
+	.st1{fill:#5E5E5E;}
+	.st2{fill:none;stroke:#5E5E5E;stroke-miterlimit:10;stroke-dasharray:5.0147,5.0147;}
+	.st3{fill:none;stroke:#00C100;}
+	.st4{fill:#00C100;}
+	.st5{fill:none;}
+	.st6{fill:none;stroke:#F70000;stroke-width:1.5;}
+	.st7{fill:#F70000;}
+	.st8{font-family:'MyriadPro-Regular';}
+	.st9{font-size:10.5502px;}
+	.st10{font-size:8.7918px;}
+	.st11{fill:none;stroke:#3AA6DD;stroke-width:1.5;}
+	.st12{fill:none;stroke:#3AA6DD;stroke-width:1.5;stroke-dasharray:5.0133,5.0133;}
+	.st13{fill:#3AA6DD;}
+</style>
+<g>
+	<g>
+		<g>
+			<line class="st0" x1="16.5" y1="97.3" x2="222.1" y2="97.3"/>
+			<g>
+				<path class="st1" d="M228.1,97.3c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C221.8,94.5,225.3,96.3,228.1,97.3z"/>
+			</g>
+		</g>
+	</g>
+	<line class="st0" x1="102.2" y1="144.6" x2="192.5" y2="144.6"/>
+	<g>
+		<g>
+			<line class="st0" x1="16.5" y1="197.6" x2="16.5" y2="195.1"/>
+			<line class="st2" x1="16.5" y1="190.1" x2="16.5" y2="102.3"/>
+			<line class="st0" x1="16.5" y1="99.8" x2="16.5" y2="97.3"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st3" x1="16.5" y1="97.3" x2="16.5" y2="56.1"/>
+			<g>
+				<path class="st4" d="M16.5,50.1c1.1,2.8,2.9,6.4,4.8,8.5l-4.8-1.7l-4.8,1.7C13.6,56.4,15.4,52.9,16.5,50.1z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<path class="st5" d="M113.7,165.5"/>
+	</g>
+	<g>
+		<g>
+			<line class="st6" x1="192.5" y1="97.3" x2="192.5" y2="135.6"/>
+			<g>
+				<path class="st7" d="M192.5,144.6c-1.6-4.3-4.3-9.5-7.1-12.8l7.1,2.6l7.1-2.6C196.7,135.1,194,140.4,192.5,144.6z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st6" x1="133.8" y1="97.3" x2="133.8" y2="135.6"/>
+			<g>
+				<path class="st7" d="M133.8,144.6c-1.6-4.3-4.3-9.5-7.1-12.8l7.1,2.6l7.1-2.6C138.1,135.1,135.4,140.4,133.8,144.6z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st6" x1="102.2" y1="97.3" x2="102.2" y2="135.6"/>
+			<g>
+				<path class="st7" d="M102.2,144.6c-1.6-4.3-4.3-9.5-7.1-12.8l7.1,2.6l7.1-2.6C106.5,135.1,103.8,140.4,102.2,144.6z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st6" x1="163.1" y1="97.3" x2="163.1" y2="135.6"/>
+			<g>
+				<path class="st7" d="M163.1,144.6c-1.6-4.3-4.3-9.5-7.1-12.8l7.1,2.6l7.1-2.6C167.3,135.1,164.6,140.4,163.1,144.6z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st6" x1="192.3" y1="97.3" x2="192.3" y2="135.6"/>
+			<g>
+				<path class="st7" d="M192.3,144.6c-1.6-4.3-4.3-9.5-7.1-12.8l7.1,2.6l7.1-2.6C196.6,135.1,193.9,140.4,192.3,144.6z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 11.4861 46.5968)" class="st8 st9">VP = 2.000.000 COP</text>
+	<text transform="matrix(1 0 0 1 11.4861 208.6622)" class="st8 st9">pf</text>
+	<text transform="matrix(1 0 0 1 133.8054 154.9122)" class="st8 st9">R= ? COP</text>
+	<text transform="matrix(1 0 0 1 169.0471 208.6632)" class="st8 st10">n1=6 ptv</text>
+	<text transform="matrix(1 0 0 1 169.0471 218.6945)" class="st8 st10">i1= 11% ptv</text>
+	<text transform="matrix(1 0 0 1 233.8499 99.4264)" class="st8 st9">ptv</text>
+	<text transform="matrix(1 0 0 1 18.2498 95.8498)" class="st8 st9">0</text>
+	<text transform="matrix(1 0 0 1 38.9324 95.8498)" class="st8 st9">1</text>
+	<text transform="matrix(1 0 0 1 69.2502 95.8498)" class="st8 st9">2</text>
+	<text transform="matrix(1 0 0 1 98.7322 95.8498)" class="st8 st9">3</text>
+	<text transform="matrix(1 0 0 1 130.4641 95.8498)" class="st8 st9">4</text>
+	<g>
+		<g>
+			<path class="st11" d="M192.5,144.6c-0.1,0.8-0.2,1.7-0.4,2.5"/>
+			<path class="st12" d="M191.2,152C174,236.5,70.7,246.3,20.9,173l-1.2-5.3"/>
+			<line class="st11" x1="19.1" y1="165.2" x2="18.6" y2="162.8"/>
+			<g>
+				<path class="st13" d="M16.5,153.9c2.5,3.8,6.3,8.3,9.9,10.9l-7.5-0.9l-6.4,4.1C14.5,164.2,15.9,158.4,16.5,153.9z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 160.3914 95.8498)" class="st8 st9">5</text>
+	<text transform="matrix(1 0 0 1 189.4563 95.8493)" class="st8 st9">6</text>
+</g>
+</svg>

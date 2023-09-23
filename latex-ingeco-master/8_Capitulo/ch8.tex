@@ -1,0 +1,322 @@
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+
+\part{Capítulo ocho}
+
+%Esto para no tener que escribir toda la ruta en cada magen agregada
+\graphicspath{{W_Varios/2_Portada_capitulos/},{8_Capitulo/ejemplos/} }
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 8
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+
+\graphicspath{{W_Varios/2_Portada_capitulos/},{8_Capitulo/ejemplos/} }
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 8
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+
+\chapter{Formulación de funciones financieras en Excel}
+
+\section{Fórmulas del capítulo/Excel Financiero}
+
+\vspace{2mm}
+
+\begin{center}
+ \begin{tabular}{ |p{8cm}| p{5cm}|}
+  \hline
+  \rowcolor{orange!50}
+  \begin{center}\textbf{Nombre} \end{center}              & \begin{center} \textbf{Función Financiera en Excel} \end{center} \\ \hline
+
+  Equivalencia de tasas periódicas       & TASA(m;;-1;1+i)           \\\hline
+
+  Tasa interés nominal anual vencida     & TASA.NOMINAL(i;m)         \\ \hline
+
+  Tasa interés periódica año vencido     & INT.EFECTIVO(j;m)         \\ \hline
+
+  Valor futuro                           & VF(i;n;;VA,0)             \\ \hline
+
+  Valor presente                         & VA(i;n;;VF,0)             \\ \hline
+
+  Valor presente serie uniforme vencida  & VNA(i;R1;R2;R3;...)       \\ \hline
+
+  Valor futuro serie uniforme vencida    & VF(i;n;;VA,0)             \\ \hline
+
+  Valor futuro serie uniforme anticipada & VF(i;n;;VA,1)             \\ \hline
+
+  Valor presente serie perpetua vencida  & VA(i;n;R;0)               \\ \hline
+
+  Valor presente gradiente aritmético    & VNA(i;R1;R2;R3;...)       \\ \hline
+
+  Valor presente gradiente geométrico    & VNA(i;R1;R2;R3;...)       \\ \hline
+
+  Valor cuota serie uniforme vencida     & PAGO(i;n;P;F;0)           \\ \hline
+
+  Valor cuota serie uniforme anticipada  & PAGO(i;n;P;F;1)           \\ \hline
+
+  Ecuación de valor                      & Función Buscar Objetivo   \\ \hline
+ \end{tabular}
+\end{center}
+
+\clearpage
+
+\section{Introducción}
+
+En este capítulo veremos la forma de resolver ejercicios de Ingeniería Económica mediante el uso del ordenador, más específicamente usando el programa de Excel, mediante la implementación de las funciones financieras que este nos brinda, para esto es importante consultar la Guía para resolver ejercicios de Ingeniería Económica a partir de Excel financiero y el uso de funciones financieras en Excel presentes en el inicio de la guía ya que este ofrecerá la metodología que debe ser aplicada para la correcta resolución de los ejercicios, además de presentar en esta las funciones que pueden ser aplicadas dando una explicación de estas y mostrando donde pueden ser aplicadas.
+\\
+
+Es importante resaltar las ventajas que ofrece la resolución de los ejercicios por este método: \\
+
+\begin{itemize}
+ \item Eficiencia en cuanto a la resolución de los ejercicios es mayor.\\
+ \item Se reduce la fuente del error que se puede llegar a obtener en el ejercicio ya que no es necesario la aplicación de cálculos a mano o en calculadora ya que todo es realizado por Excel.\\
+ \item Mejora la presentación del ejercicio.\\
+ \item Permite realizar un análisis de sensibilidad que por otro método no es posible.\\
+
+\end{itemize}
+
+Para mostrar las ventajas que posee el uso de Excel a continuación se mostraran diversos ejemplos sobre los diferentes temas tomados de los capítulos 2, 4, 5, 6 y 7 presentes en la Guía de Ingeniería Económica.
+
+\section{Ejemplos}
+
+\input{8_Capitulo/ejemplos/1/1}
+\input{8_Capitulo/ejemplos/2/2}
+\input{8_Capitulo/ejemplos/3/3}
+\input{8_Capitulo/ejemplos/4/4}
+\input{8_Capitulo/ejemplos/5/5}
+\input{8_Capitulo/ejemplos/6/6}
+\input{8_Capitulo/ejemplos/7/7}
+\input{8_Capitulo/ejemplos/8/8}
+\input{8_Capitulo/ejemplos/9/9}
+\input{8_Capitulo/ejemplos/10/10}
+\input{8_Capitulo/ejemplos/11/11}
+\input{8_Capitulo/ejemplos/12/12}
+
+\section{Ejercicios propuestos}
+
+En esta sección se dará solución a ejercicios propuestos por los estudiantes
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+%\part{Parte Dos}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 3
+%----------------------------------------------------------------------------------------
+
+%\chapterimage{ima2} % Chapter heading image
+
+
+%Anexos
+%\chapter*{Anexos}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Anexos}}
+
+
+
+
+%----------------
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\chapter*{Bibliografía}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliografía}}
+%\section*{Books}
+%\addcontentsline{toc}{section}{Books}
+%\printbibliography[heading=bibempty,type=book]
+
+
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\printindex
+
+%----------------------------------------------------------------------------------------
+% \textbf{Ejemplo 1}\\
+% Si invierto hoy un capital de 1.000.000 COP, cuánto capital podré retirar en 18 meses suponiendo que el capital invertido gana el 24\% (nasv) nominal anual semeste vencido? \\ \\
+% %\newpage %USAR SOLO SI EL SOLUCIÓN QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAGINA
+% \textbf{Solución.}\\
+% %La tabla irá centrada
+% \begin{center}
+%  \renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+%  %Creación de la cuadricula de 3 columnas
+%  \begin{longtable}[H]{|p{0.5\linewidth}|p{0.5\linewidth}|}
+%   \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Declaración de variables}}                  \\ \hline
+%   $n = 3 \hspace{1mm} psv$                                      & $VF =  1{.}000{.}000$ COP             \\
+%   $j = 24\% \hspace{1mm} nasv \equiv i = 12\% \hspace{1mm} psv$ & $VP =  ?$ COP                       \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Tabla de flujo de caja}}                    \\ \hline
+%   \multicolumn{2}{|p{\columnwidth}|}{
+%   \begin{center}
+%    \begin{tabular}{|c|c|}
+%     \hline
+%     Periodo (psv) & Flujo          \\ \hline
+%     $0$           &  1.000.000 COP             \\ \hline
+%     $1$           &  COP -            \\ \hline
+%     $2$           &  COP -            \\ \hline
+%     $3$           &  ? COP \\ \hline
+%    \end{tabular}
+%   \end{center}
+%   }                                                                                                   \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Fórmulas utilizadas}}                       \\ \hline
+%   \multicolumn{2}{|l|}{Mediante el uso de Excel:}                                                     \\
+%   \multicolumn{2}{|l|}{VF (Valor futuro): Devuelve el valor futuro para una inversión}              \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Desarrollo en Excel}}                       \\ \hline
+%   \multicolumn{2}{|l|}{Se aplicará la función VF de la siguiente forma:}                              \\
+%   \multicolumn{2}{|c|}{ \includegraphics[trim=-5 -5 -5 -5 ,width=1\columnwidth]{1/Ejem1.PNG}}         \\
+%   \multicolumn{2}{|l|}{=VA (0,12; 18; -1000000) con referencia en la hoja de Excel usada para el ejercicio.} \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Respuesta}}                                 \\ \hline
+%   \multicolumn{2}{|c|}{El valor futuro (VF) es de  7.689.965 COP.}               \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Gráfica}}                                   \\ \hline
+%   \multicolumn{2}{|c|}{No es necesaria la realización de una gráfica para este ejercicio.}            \\ \hline
+%  \end{longtable}
+%  %\newline \newline %USARLO SI CREES QUE ES NECESARIO
+% \end{center}
+
+% \textbf{Ejemplo 2}\\
+% Dado el 24\% periodo 3 años vencido, hallar una tasa periódica equivalente para periodo 2 años vencido\\ \\
+% %\newpage %USAR SOLO SI EL SOLUCIÓN QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAGINA
+% \textbf{Solución.}\\
+% %La tabla irá centrada
+% \begin{center}
+%  \renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+%  %Creación de la cuadricula de 3 columnas
+%  \begin{longtable}[H]{|p{0.5\linewidth}|p{0.5\linewidth}|}
+%   \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Declaración de variables}}                         \\ \hline
+%   \multicolumn{1}{|c|}{$m=\frac{3}{2}p(2a)v$  $T=8\% $ na$i_1=24\% p(3a)v$  $i_2=?\% p(2a)v$ }              \\ \hline                                         
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Tabla de flujo de caja}}                           \\ \hline
+%   \multicolumn{2}{|c|}{En este ejercicio, no se realiza la tabla de flujo de caja.}                          \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Fórmulas utilizadas}}                              \\ \hline
+%   \multicolumn{2}{|l|}{Mediante el uso de Excel:}                                                            \\
+%   \multicolumn{2}{|l|}{INT.EFECTIVO: Devuelve la tasa de interés anual efectiva}                             \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Desarrollo en Excel}}                              \\ \hline
+% \multicolumn{2}{|l|}{Se aplicará la función INT.EFECTIVO de la siguiente forma:}                             \\
+%   \multicolumn{2}{|c|}{ \includegraphics[trim=-5 -5 -5 -5 ,width=1\columnwidth]{2/Ejem2.1.PNG}}              \\
+%   \multicolumn{2}{|c|}{ \includegraphics[trim=-5 -5 -5 -5 ,width=1\columnwidth]{2/Ejem2.2.PNG}}
+%  \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Respuesta}}                                        \\ \hline
+%   \multicolumn{2}{|c|}{La tasa es del 16,11\% período 2 año vencido}                                        \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Gráfica}}                                          \\ \hline
+%   \multicolumn{2}{|c|}{No es necesaria la realización de una gráfica para este ejercicio.}                   \\ \hline
+%  \end{longtable}
+%  %\newline \newline %USARLO SI CREES QUE ES NECESARIO
+% \end{center}
+
+% \textbf{Ejemplo 3}\\
+% \vspace{2mm}
+
+% Una persona tiene dos deudas una de  250.000 COP pagadera en 3 meses y otra de 400.000  COP pagadera en 7 meses. Si desea cambiar la forma de cancelarlas mediante dos pagos iguales de X COP cada uno con vencimiento en 5 meses y 12 meses respectivamente, determinar el valor de los pagos suponiendo una tasa del 24\% (namv) nominal anual mes vencido.\\ \\
+% %\newpage %USAR SOLO SI EL SOLUCIÓN QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAGINA
+% \textbf{Solución.}\\
+% %La tabla irá centrada
+% \begin{center}
+%  \renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+%  %Creación de la cuadricula de 3 columnas
+%  \begin{longtable}[H]{|p{0.5\linewidth}|p{0.5\linewidth}|}
+%   \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Declaración de variables}}                          \\ \hline
+%   Deuda Inicial      & Deuda equivalente                                                                      \\
+%   $D_1= 250.000 COP $ & $n_1 = 5 pmv$                                                                          \\
+%   $n_1=3 pmv$        & $n_2 = 10 pmv$                                                                         \\
+%   $D_2= 400.000 COP $ & $j = 24 \% namv$                                                                     \\
+%   $n_2=7 pmv$        & $i = 2 \% pmv$                                                                        \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Tabla de flujo de caja}}                            \\ \hline
+%   \multicolumn{2}{|p{\columnwidth}|}{
+%   \begin{center}
+%    \begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+%     \hline
+%     \textbf{Periodo} & \textbf{Deuda Inicial} & \textbf{Deuda Equivalente} \\ \hline
+
+%     0                &  COP                      &  COP                          \\ \hline
+%     1                &  COP                      &  COP                          \\ \hline
+%     2                &  COP                      &  COP                          \\ \hline
+%     3                &  250.000 COP              &  COP                          \\ \hline
+%     4                &  COP                      &  COP                          \\ \hline
+%     5                &  COP                      &  X COP                        \\ \hline
+%     6                &  COP                      &  COP                          \\ \hline
+%     7                &  400.000 COP              &  COP                          \\ \hline
+%     8                &  COP                      &  COP                          \\ \hline
+%     9                &  COP                      &  COP                          \\ \hline
+%     10               &  COP                      &  COP                          \\ \hline
+%     11               &  COP                      &  COP                          \\ \hline
+%     12               &  COP                      &  X COP                        \\ \hline
+%    \end{tabular}
+%   \end{center}
+%   }                                                                                                           \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Fórmulas utilizadas}}                               \\ \hline
+%   \multicolumn{2}{|l|}{Mediante el uso de Excel:}                                                             \\
+%   \multicolumn{2}{|l|}{VNA (Valor neto actual): Devuelve el valor neto presente de una inversión}                      \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Desarrollo en Excel}}                               \\ \hline
+%   \multicolumn{2}{|l|}{Se aplicará la función VNA de la siguiente forma:}                                      \\
+%   \multicolumn{2}{|c|}{ \includegraphics[trim=-5 -5 -5 -5 ,width=1\columnwidth]{3/Ejem3.PNG}}                 \\
+%   \multicolumn{2}{|p{\columnwidth}|}{
+%   Esta función se aplicará de la siguiente forma en las dos celdas donde se desee obtener
+%   el Valor presente de las deudas originales y de las deudas equivalentes.\newline
+
+%   = -VNA(0,02;B7:B19) = -=VNA(0,02;C7:C19)\newline
+
+%   Luego se aplicará la formula Función Objetivo de la siguiente forma:
+%   }                                                                                                           \\
+%   \multicolumn{2}{|c|}{ \includegraphics[trim=-5 -5 -5 -5 ,width=0.5\columnwidth]{3/Ejem3.2.PNG}} \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Respuesta}}                                         \\ \hline
+%   \multicolumn{2}{|p{\columnwidth}|}{
+%   \begin{center}
+%    \begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+%     \hline
+%     \textbf{Periodo} & \textbf{Deuda Inicial} & \textbf{Deuda Equivalente} \\ \hline
+
+
+%     0                &  COP                      &  COP                          \\ \hline
+%     1                &  COP                      &  COP                          \\ \hline
+%     2                &  COP                      &  COP                          \\ \hline
+%     3                &  25.000,00 COP            &  COP                          \\ \hline
+%     4                &  COP                      &  COP                          \\ \hline
+%     5                &  COP                      &  35.424,00 COP                \\ \hline
+%     6                &  COP                      &  COP                          \\ \hline
+%     7                &  40.000,00 COP            &  COP                          \\ \hline
+%     8                &  COP                      &  COP                          \\ \hline
+%     9                &  COP                      &  COP                          \\ \hline
+%     10               &  COP                      &  COP                          \\ \hline
+%     11               &  COP                      &  COP                          \\ \hline
+%     12               &  COP                      &  35.424,00 COP                \\ \hline
+%    \end{tabular}
+%   \end{center}
+
+%   Debe realizar dos pagos con el valor de 35.423,66 COP cada uno.
+%   }                                                                                                           \\ \hline
+%   \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Gráfica}}                                           \\ \hline
+%   \multicolumn{2}{|c|}{No es necesaria la realización de una gráfica para este ejercicio.}                    \\ \hline
+%  \end{longtable}
+ %\newline \newline %USARLO SI CREES QUE ES NECESARIO
+% \end{center}
+
+
+
+
+
+% \end{document}

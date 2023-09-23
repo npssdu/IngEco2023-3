@@ -1,0 +1,269 @@
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+
+\part{Capítulo seis}
+\graphicspath{ {img/ch6/}, {W_Varios/2_Portada_capitulos} }
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 6
+%----------------------------------------------------------------------------------------
+
+\chapterimage{6_Capitulo/img/portada/ima2} % Chapter heading image
+
+
+\chapter{Gradientes}
+
+%\begin{center}
+%	\includegraphics[height=5.5cm]{TE6.JPG}
+%\end{center}
+
+%\begin{center}
+%	\includegraphics[scale=1]{6_Capitulo/img/ejemplos/6_0}
+%\end{center}
+\section{Mapa Mental}
+\begin{center}
+	\includegraphics[scale=0.43]{6_Capitulo/img/explicacion/Mapa Mental 6.1.pdf}
+\end{center}
+
+
+\newpage
+\section{{Fórmulas del capítulo}}
+
+
+\begin{center}
+	\begin{tabular}{ |p{6.8cm}|p{5cm}| p{3.2cm}|}
+		\hline
+		\rowcolor{orange!50}
+		\begin{center}\textbf{Fórmula}\end{center}                                                                                  & \begin{center}\textbf{Nombre}\end{center}                                  & \begin{center}\textbf{Excel}\end{center} \\ \hline
+		
+		
+		$VP = R  \frac{1-(1 + i)^{-n}}{i} + \frac{L}{i}[ \frac{1-(1 + i)^{-n}}{i} - n(1 + i)^{-n} ]$\hspace{35 pt} & Valor presente gradiente aritmético                        & VNA(i;R1;R2;R3;...)       \\ \hline
+		
+		
+		$VF = R\frac{(1+i)^n-1}{i} + \frac{L}{i}[\frac{(1+i)^n-1}{i}-n]$ \hspace{35 pt}                            & Valor futuro gradiente aritmético                                                      
+		                                                                                                           & -                                                                                      \\  \hline
+		
+		
+		$VP = \frac{R}{i} + \frac{L}{i^2}$ \hspace{35 pt}                                                          & Valor  presente gradiente aritmético infinito                                          
+		                                                                                                           & -                                                                                      \\ \hline
+		
+		$R_{n} = R_{1} + (n-1)L$ \hspace{35 pt}                                                                    & Valor último flujo de un gradiente aritmético                                          
+		                                                                                                           & -                                                                                      \\ \hline
+		
+		$VP = R  \frac{(1 + g)^n (1 + i)^{-n}-1}{g - i} $ \hspace{35 pt}                                           & Valor presente gradiente geométrico si  $g \neq i$         &                           
+		-                                                                                                                                                                                                   \\ \hline
+		
+		$VP = \frac{R n}{1 + i}$ \hspace{35 pt}                                                                    & Valor presente gradiente geométrico si g = i               & VNA(i;R1;R2;R3;...)       \\ \hline
+		
+		$R_{n} = R_{1}(1+g)^{n-1}$ \hspace{35 pt}                                                                  & Flujo n de un gradiente geométrico                         & -                         \\ \hline
+		
+		$VP = \frac{R}{1 - g} $ \hspace{35 pt}                                                                     & Valor presente gradiente geométrico infinito si g < i                                  
+		                                                                                                           & VNA(i;R1;R2;R3;...)                                                                    \\ \hline
+		
+		$VP = \infty $ \hspace{35 pt}                                                                              & Valor presente gradiente geométrico infinito si $g \geq i$ & -                         \\ \hline
+		
+		
+		$VF = R  \frac{(1 + g)^n - (1 + i)^n}{g - i} $                                                             & Valor futuro gradiente geométrico si $g \neq i$            & -                         \\ \hline
+		
+		$VF = Rn(1 + i)^{n-1} $                                                                                    & Valor futuro gradiente geométrico si $g = i$               & -                         \\ \hline
+	\end{tabular}
+\end{center}
+
+
+\section{Introducción}
+
+
+Debido a la inflación, se observa que casi todos los renglones de la economía van aumentando de precios, por esta razón, es necesario elaborar modelos matemáticos que ajustándose a los índices de inflación puedan compensar los efectos erosionantes en el dinero a través del tiempo, entre los modelos matemáticos que pueden suplir esta necesidad están los gradientes.\\
+
+\subsection{Definición}
+
+Un gradiente es una serie de ingresos o egresos que cumplen con las siguientes condiciones:\\
+\begin{enumerate}
+	\item Todos los ingresos o egresos cumplen con una ley de formación.
+	\item Los ingresos o egresos se efectúan a iguales intervalos de tiempo.
+	\item Todos los ingresos o egresos se trasladan al principio o al final con la misma tasa de interés.
+	\item El número de ingresos o egresos es igual al número de períodos.\\
+\end{enumerate}
+
+La ley de formación, de la que habla la primera condición, puede ser de varias clases, sin embargo, las más utilizadas son: la que corresponde al gradiente lineal o aritmético y la que corresponde al gradiente geométrico.\\
+
+\section{Gradiente aritmético (VP, VF, L, i, n)}
+
+En el gradiente aritmético cada ingreso o egreso es igual al anterior, más una constante L; si esta constante es positiva, el gradiente será creciente; si la constante es negativa, el gradiente será decreciente. Obviamente si L = 0 todos los ingresos o egresos son iguales y la serie se convierte en una serie uniforme. \\
+
+$R_{2} = R_{1} + L$\\
+$R_{3} = R_{2}  + L  = R_{1} + 2L$\\
+... ... ... ... \\
+$R_{n} = R_{1} + (n-1)L$\\
+De lo anterior se deduce que la fórmula del último término será:\\
+$R_{n} = R_{1} + (n-1)L$ \hspace{35 pt} \textit{Valor flujo n de un gradiente aritmético}\\
+
+\input{6_Capitulo/ejemplos/1/1}
+
+\section{Fórmula del valor presente del gradiente aritmético (VP, L, i, n)}
+%imagen 3
+\begin{center}
+	\includegraphics[height=4.5cm]{6_Capitulo/img/ejemplos/6_3}
+\end{center}
+En igual forma como se hizo con las series uniformes vencidas, planteamos la ecuación de valor, trasladando cada uno de los ingresos o egresos a la período focal, usando la tasa periódica i vencida; entonces:\\
+
+$VP = R(1+i)^{-1} + (R+L)(1+i)^{-2} + (R+2L)(1+i)^{-3} + ... +     (R+(n-1)L)(1+i)^{-n}$\\
+si se aplica propiedad distributiva en los términos posibles y primero se escriben los elementos que contienen R y luego se escriben los términos que contienen L, se tiene:\\
+
+$VP = R(1+i)^{-1} + R(1+i)^{-2}+ R(1+i)^{-3} +...+ R(1+i)^{-n} COP  + L(1+i)^{-2} + 2L(1+i)^{-3} + ... + (n-1)L(1+i)^{-n}$ \\
+	
+	Se puede apreciar que los términos de R son los mismos que si se hablase de la ecuación de valor presente de una serie uniforme vencida, por lo que se sustituyen por el valor de la fórmula, a continuación, se observa que factorizando la L del resto de los términos, por lo que la expresión queda de la siguiente manera: \\
+	
+$VP=R\frac{(1+i)^n-i}{i} + L[(1+i)^{-2} + 2(1+i)^{-3} + 3(1+i)^{-4} + ... + (n-1)(1+i)^{-n}]$ \\
+	
+	Suponga que Z es igual a la serie dentro del paréntesis cuadrado: \\
+	
+$Z = (1+i)^{-2} + 2(1+i)^{-3} + 3(1+i)^{-4} + ... + (n-1)(1+i)^{-n}$ \\
+	
+	Si se multiplica esta ecuación por (1+i) se obtiene: \\
+	
+$Z(1+i) = (1+i)^{-1} + 2(1+i)^{-2} + 3(1+i)^{-3} + ... + (n-1)(1+i)^{-n+1}$ \\
+	
+	Entonces, se desarrolla la ecuación Z(1+i) - Z, dando como resultado: \\
+	
+$Z(1+i) - Z = (1+i)^{-1} + (1+i)^{-2} + (1+i)^{-3} + ... + (1+i)^{-(n+1)} - (n-1)(1+i)^{-n-1}$ \\
+	
+	Simplificando: \\
+	
+$Zi = (1+i)^{-1} + (1+i)^{-2} + (1+i)^{-3} + ... + (1+i)^{-(n+1)} +  (1+i)^{-n} - n(1+i)^{-n}$ \\
+	
+	Se observa que si no tomamos el último término, se tiene una serie uniforme vencida:\\
+	
+$Zi = \frac{(1+i)^n-i}{i} - n(1+i)^{-n} $\\
+	
+$Z = \frac{1}{i}[\frac{(1+i)^n-i}{i} - n(1+i)^{-n}]$\\
+	
+	Así se puede unir la ecuación Z y la ecuación original, dando por resultado:\\
+	
+	
+$VP=R\frac{(1+i)^n-i}{i}+\frac{L}{i}[\frac{(1+i)^n-i}{i}-n(1+i)^{-n}]$\hspace{35 pt} \textit{Valor presente de un gradiente aritmético}\\
+	
+	En la fórmula anterior está R pero sin indicar cuál de las cuotas es, sin embargo, en la deducción de la fórmula se ha trabajado con base en que R es el primer ingreso o egreso. \\
+
+\input{6_Capitulo/ejemplos/2/2}
+
+\input{6_Capitulo/ejemplos/3/3}
+	
+	\section{Fórmula del valor final del gradiente aritmético (VF, L, i, n)}
+	
+	Para hallar el valor final basta tomar el valor presente y multiplicarlo por $(1+i)^n$, así:\\
+$F= P(1+i)^n$ \hspace{120pt} \textit{Valor futuro dado un valor presente}
+	
+	\vspace{2mm}
+	Haciendo las operaciones respectivas y simplificando se concluye que:
+	
+$VF = R\frac{(1+i)^n-1}{i} + \frac{L}{i}[\frac{(1+i)^n-1}{i}-n]$ \hspace{35pt} \textit{Valor final del gradiente aritmético}\\
+	
+	\textrm{Observación} nuevamente se hace énfasis en que R representa la primera cuota del gradiente.\\
+	
+\input{6_Capitulo/ejemplos/4/4}
+		      
+		      \section{Amortización con cuota creciente}
+		      
+		      El concepto de amortización hace referencia a que los activos de una empresa pierden valor a lo largo del tiempo y esa perdida se contabiliza teniendo en cuenta los años de vida del activo. \\
+		      
+		      Debido a las altas tasas de inflación, en muchos países se ha impuesto la moda de utilizar una cuota creciente en los sistemas de amortización lo cual ha impulsado el desarrollo de nuevas técnicas.\\
+		      
+\input{6_Capitulo/ejemplos/5/5}
+
+	\section{Gradiente aritmético infinito}
+	Igual que en las series uniformes vencidas, solo tiene sentido el valor presente de un gradiente 	infinito. Su principal aplicación es el cálculo del costo del capital, tema que se discutirá en un capítulo posterior.\\
+	Para efectuar su demostración empezamos con la siguiente fórmula: \\
+	
+$VP = \lim\limits_{n \to \infty} R\frac{(1+i)^n-i}{i}+\frac{L}{i}[\frac{(1+i)^n-i}{i}-n(1+i)^{-n}] $\\
+
+	Por propiedad distributiva se aplica el límite a cada uno de los sumandos por propiedades de límites:\\
+	
+$VP = \lim\limits_{x \to \infty} R\frac{(1+i)^n-i}{i} + \lim\limits_{x \to \infty} \frac{L}{i}\frac{(1+i)^n-i}{i} - \lim\limits_{x \to \infty} \frac{L}{i}n(1+i)^{-n}$\\
+
+	Desarrollando cada uno de los límites individualmente:
+	
+	\begin{itemize}
+		\item $\lim\limits_{x \to \infty} R\frac{(1+i)^n-i}{i} = R\frac{1}{i} = \frac{R}{i} $\\
+		\item $\lim\limits_{x \to \infty} \frac{L}{i}\frac{(1+i)^n-i}{i} = \frac{L}{i} \frac{1}{i} = \frac{L}{i^2} $\\
+		\item $\lim\limits_{x \to \infty} \frac{L}{i}n(1+i)^{-n} = \frac{L}{i} \lim\limits_{x \to \infty} \frac{n}{(1+i)^{n}} $\\
+		      se usa L'H$\hat{o}$pital \\
+		      $ \frac{L}{i} \lim\limits_{x \to \infty} \frac{1}{n(1+i)^{n}} = 0 $\\
+	\end{itemize}
+	
+	Dando como resultado la siguiente ecuación:\\
+	
+$VP = \frac{R}{i} + \frac{L}{i^2}$ \hspace{35pt} \textit{Valor presente de un gradiente aritmético infinito}\\
+\input{6_Capitulo/ejemplos/6/6}
+		\section{Gradiente geométrico}
+	Un gradiente geométrico es una serie de ingresos o egresos.
+	
+	En un gradiente geométrico, el primer paso será: $R_{1}$\\
+	El segundo ingreso o egreso $R_{2} = R_{1}(1+g)$\\
+	El tercer ingreso o egreso $R_{3} = R_{2}(1 + g) = R_{1}(1 + g)^{2}$\\
+	El último ingreso o egreso entonces: $R_{n} = R_{n-1}(1+g) = R_{1}(1+g)^{n-1}$\\
+$R_{n} = R_{1}(1+g)^{n-1}$ \hspace{35 pt} \textit{Flujo n de un gradiente geométrico}\\
+	Dónde:\\
+$R_{1} = Primer \hspace{5 pt} ingreso \hspace{5 pt} o \hspace{5 pt} egreso \hspace{5 pt} vencido$\\
+g = tasa de crecimiento de los ingresos o egresos\\
+
+\section{Fórmula del valor presente del gradiente geométrico}
+%formula
+\begin{center}
+	\fontsize{13}{13}\selectfont
+	$P = \left \{ \begin{matrix}\frac{R(1+g)^{n}(1+i)^{-n}}{g-i} & \mbox{si }g\mbox{ diferente de i} 
+			\\ \frac{R(n)}{1+i} & \mbox{si }g\mbox{ igual a i}\end{matrix}\right.$
+\end{center}
+Donde\\
+R = el primer ingreso o egreso efectuado\\
+g = porcentaje de crecimiento de los pagos (en decimal)\\
+i = tasa periódica vencida\\
+n = número de períodos\\
+
+\input{6_Capitulo/ejemplos/7/7}
+\input{6_Capitulo/ejemplos/8/8}
+\input{6_Capitulo/ejemplos/9/9}
+\input{6_Capitulo/ejemplos/10/10}
+\input{6_Capitulo/ejemplos/11/11}
+
+\section{Gradiente geométrico infinito}
+Una de las aplicaciones que tiene este tipo de gradientes está en el análisis sobre emisión de acciones, que se estudiará en capítulos posteriores. Solo tiene sentido el análisis del valor presente.\\
+
+%formula VP
+\begin{center}
+	\fontsize{13}{13}\selectfont
+	$VP = \left \{ \begin{matrix}\frac{R}{i-g} & \mbox{si }g\mbox{ <  i} 
+			\\ \infty & \mbox{si }g\mbox{ >  i}\end{matrix}\right.$
+\end{center}
+
+\input{6_Capitulo/ejemplos/12/12}
+
+\section{Gradientes escalonados}
+En este capítulo haremos una breve introducción al tema de los gradientes escalonados, pero en el siguiente capítulo, para poder analizar algunos sistemas de amortización, es necesario volver sobre este asunto y analizarlo con más detalle.\\
+
+Un gradiente escalonado es una serie de ingresos o egresos que permanecen constantes durante cierto tiempo, pero 	que crecen o decrecen periódicamente.\\
+
+Para trabajar con gradientes escalonados es más conveniente elaborar dos gráficas: en la primera, que denominaremos el gradiente escalonado, se colocan los ingresos o egresos en la misma forma en que van a ser pagadas las cuotas, y en la segunda gráfica que denominaremos el gradiente simple, se colocará el valor final de cada serie de ingresos o egresos iguales.\\
+
+En la primera gráfica a todos los datos tales como ingresos o egresos, tasa y período se les antepone  el prefijo sub o ínter así: inter-pago o inter-cuota, inter-tasa e inter-período, en la segunda gráfica no habrá cambios.\\
+
+Normalmente sólo se da la información de una de las dos tasas bien sea la inter-tasa o la tasa, lo importante es que la que no se conoce se puede calcular a partir de la que se conoce mediante la equivalencia de tasas.\\
+
+Se representará por m el número de inter-cuotas por cada cuota y se le denominará tamaño de escalón.\\
+
+Se recomienda que al frente de cada dibujo se coloquen los respectivos datos a fin de evitar confusiones.\\
+
+\input{6_Capitulo/ejemplos/13/13}
+
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\printindex
+
+%---------------------

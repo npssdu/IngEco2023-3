@@ -1,0 +1,210 @@
+%----------------------------------------------------------------------------------------
+
+\part{Capítulo dos}
+\graphicspath{ {2_Capitulo/img/ejemplos/},{2_Capitulo/img/explicacion/}, {W_Varios/2_Portada_capitulos} }
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2
+%----------------------------------------------------------------------------------------
+
+\chapterimage{2_Capitulo/img/portada/ima2} % Chapter heading image
+\chapter{Interés Compuesto}
+
+%------------------------------------------
+%Tabla de Fórmulas
+%------------------------------------------
+
+\section{Mapa Mental}
+\begin{center}
+   \includegraphics[height = 5.6 cm]{Mapa Mental 2.1.pdf}\\
+\end{center}
+\clearpage
+\section{{Fórmulas del Capítulo}}
+\begin{spacing}{1.3}
+   \begin{center}
+      \begin{tabular}{ |p{4cm}|p{5cm}| p{5cm}|}
+         \hline
+         \rowcolor{orange!50}
+         \begin{center}\textbf{Fórmula} \end{center}   & \begin{center} \textbf{Nombre}\end{center} & \begin{center} \textbf{Excel} \end{center} \\ \hline
+         F = $P(1+i)^n$                                & Valor futuro                               & VF(i;n;;VA,0)                              \\ \hline
+         P = $\frac{F}{(1 + i)^{n}}$                   & Valor presente                             & VA(i;n;;VF,0)                              \\ \hline
+         j = i(m)                                      & Tasa periódica anualizada                  & TASA.NOMINAL(i;m)                          \\ \hline
+         ${(1 + i_{1})^{m_1}}$ = ${(1 + i_{2})^{m_2}}$ & Equivalencia de tasas                      & TASA(m;;-1;1+i)                            \\ \hline
+      \end{tabular}
+   \end{center}
+\end{spacing}
+\section{Interés compuesto}
+Es la acumulación de intereses producidos por un capital inicial a una tasa de interés durante períodos determinados.\\
+
+% ejemplo1
+\input{2_Capitulo/ejemplos/1/1a}
+
+\clearpage
+
+En resumen, se tiene en el inciso A:
+\begin{table}[htbp]
+   \begin{center}
+      \begin{tabular}{|l|l|l|l|}
+         \hline
+         Período & Capital Inicial & Interés     & Capital Final \\
+         \hline
+         0       & 200.000 COP &  0 COP      & 200.000 COP  \\ \hline
+         1       & 200.000 COP &  20.000 COP & 220.000 COP  \\ \hline
+         2       & 200.000 COP &  20.000 COP & 240.000 COP  \\ \hline
+         3       & 200.000 COP &  20.000 COP & 260.000 COP  \\ \hline
+         4       & 200.000 COP &  20.000 COP & 280.000 COP  \\ \hline
+      \end{tabular}
+      \label{tabla:interesSimple1}
+   \end{center}
+\end{table}
+
+\input{2_Capitulo/ejemplos/1/1b}
+
+Representando en una tabla la información obtenida en el apartado anterior del ejercicio se tiene lo siguiente:\\
+
+\begin{table}[htbp]
+   \begin{center}
+      \begin{tabular}{|l|l|l|l|}
+         \hline
+         Período & Capital Inicial & Interés     & Capital Final \\
+         \hline
+         0 & 200.000 COP & 0 COP      & 200.000 COP \\ \hline
+         1 & 200.000 COP & 20.000 COP & 220.000 COP \\ \hline
+         2 & 220.000 COP & 22.000 COP & 242.000 COP \\ \hline
+         3 & 242.000 COP & 24.200 COP & 266.000 COP \\ \hline
+         4 & 266.000 COP & 26.000 COP & 292.000 COP \\ \hline
+      \end{tabular}
+      \label{tabla:interesCompuesto1}
+   \end{center}
+\end{table}
+\textbf{Generalizando:}\\
+\begin{table}[htbp]
+   \begin{center}
+      \begin{tabular}{|l|l|l|l|}
+         \hline
+         Período & Capital Inicial & Interés         & Capital Final                                       \\
+         \hline
+         0       & P               & 0               & $F_{0}$=P                                           \\ \hline
+         1       & P               & Pi              & $F_{1}$ = P + Pi = P(1+i)                           \\ \hline
+         2       & P(1+i)          & P(1+i)i         & $F_{2}$ = P(1+i) + P(1+i)i = $P(1+i)^{2}$           \\ \hline
+         .       & .               & .               & .                                                   \\ \hline
+         ..      & ..              & ..              & ..                                                  \\ \hline
+         ...     & ...             & ...             & ...                                                 \\ \hline
+         n       & $P(1+i)^{n-1}$  & $P(1+i)^{n-1}i$ & $F_{n} = P(1+i)^{n-1} + P(1+i)^{n-1}i = P(1+i)^{n}$ \\ \hline
+      \end{tabular}
+      \label{tabla:interesCompuesto2}
+   \end{center}
+\end{table}
+
+Se concluye que la fórmula del interés compuesto es:\\
+$F = P(1+i)^n$ \hspace{20 pt} \textit{Valor futuro}\\
+
+\textbf{Volviendo al ejemplo 1:}\\
+$F = P(1+i)^n$\\
+$F =  200.000 (1+0,1)^4$ COP\\
+$F =  292.820$ COP\\
+
+\input{2_Capitulo/ejemplos/1/2}
+
+\section{Tasa de interés nominal anual (j)}
+Corresponde a la anualización de la tasa periódica (i):\\
+$j = i(m)$\\
+\input{2_Capitulo/ejemplos/2/2}
+\input{2_Capitulo/ejemplos/3/3}
+
+\section{Equivalencia de tasas ($i_{1} \equiv i_{2}$)}
+Las tasas equivalentes de interés,  son aquellas que teniendo diferente periodicidad y/o 
+modalidad de liquidación de intereses producen el mismo monto al final o al comienzo del flujo.\\
+\\
+\input{2_Capitulo/ejemplos/4/4}
+
+\section{Relación entre una tasa de interés anticipada(i$_{a}$) y una tasa vencida(i)}
+Para $n = 1$, se tiene
+$i = \frac{I}{P}$ \\
+Si $I = F  d \land P = F (1 -d)$ \hspace{35 pt}\textit{Tasa nominal anual}\\\\
+Remplazando en i: \\
+$i = \frac {F d} {F (1-d)}$\\\\
+Factorizando F,  se obtiene: \\
+$i = \frac{d}{(1 - d)}$\\
+Remplazando $d = i_{a} $, se obtiene: \\
+$i = \frac{ia}{(1 - ia)}$\\\\
+Despejando $i_{a}$: \\
+$i_{a} = \frac{i}{(1+i)}$ \\\\
+$i = \frac{I}{P} = \frac{F d}{F(1-d)}$\\\\
+$i = \frac{d}{1-d}$\\
+
+Reemplazando d = $i_{a}$, se obtiene:\\
+
+$i_{a} = \frac{i}{1+i}$\hspace{35 pt}\textit{Tasa periódica anticipada}\\
+$j_{a} = i_{a}  (m)$\hspace{23 pt}\textit{Tasa nominal anual anticipada}\\\\
+
+\section{Tasa de interés nominal anual (j) y tasa efectiva anual (EA)}
+Según la Superintendencia Financiera de Colombia, la tasa de interés nominal anual es la tasa que el emisor paga al inversionista por un título valor.
+Las tasas nominales anuales corresponden a la anualización de una tasa \textbf{periódica}. \\
+De igual forma, pueden tener modalidad vencida o anticipada para la liquidación de intereses.\\
+
+\textbf{Tasa de interés efectiva anual (EA):} La tasa de interés efectiva anual, es el instrumento apropiado para medir y comparar, el rendimiento de distintas alternativas de inversión según la Superintendencia Financiera.\\
+Según el profesor Javier Serrano, en el libro “Matemáticas financieras y evaluación de proyectos”, la tasa de interés efectiva anual (EA) corresponde a aquella tasa que paga de una sola vez al final del año.\\
+
+Para calcular la tasa efectiva anual, se parte de la fórmula de equivalencia de tasas en donde el
+período es anual vencido.
+
+$(1 + i_1)^{m_1} = (1 + i_2)^{m_2}$ , en donde $i_1$ = tasa periódica, que anualizada ($j_1$) es equivalente a la tasa efectiva anual, para un $m_1 = 1 pav$.\\
+
+IMPORTANTE: La tasa Efectiva Anual es equivalente a la tasa Nominal Anual Año Vencido. (naav) \\
+
+
+\section{Gráfica de equivalencia de tasas}
+Gráfica idónea para realizar una equivalencia entre tasas, utilizando las ecuaciones previamente analizadas, se verá que podemos partir de una tasa cualquiera e ir a otra sin necesidad de información adicional.\\
+Los puntos que se han colocado del 1 al 8 solo sirven de identificación.\\
+\begin{center}
+   \includegraphics[height = 9.0 cm]{general.png}\\
+\end{center}
+
+\textbf{Observación:} Para el uso de la gráfica de equivalencia de tasas, siempre se debe comenzar de un punto de la izquierda y seguir la trayectoria hasta llegar a otro punto situado en la parte derecha.\\
+\newpage
+
+\input{2_Capitulo/ejemplos/5/5}
+\input{2_Capitulo/ejemplos/6/6}
+\input{2_Capitulo/ejemplos/7/7}
+\input{2_Capitulo/ejemplos/8/8}
+\input{2_Capitulo/ejemplos/9/9}
+\input{2_Capitulo/ejemplos/10/10}
+
+\section{Ecuaciones de equivalencia de flujos}
+Es muy frecuente cambiar una o varias obligaciones por otra u otras nuevas obligaciones. La solución de este problema es elemental y para solucionarlo es necesario usar la ecuación de equivalencia de flujos, que es una igualdad de valores ubicados en una sola fecha denominada período focal.\\
+La período focal se representa gráficamente por una línea a trazos y por las letras pf y es la fecha en que debe hacerse la igualdad entre ingresos (flujos positivos) y egresos (flujos negativos) . La ubicación de la período focal no altera la respuesta final, por tal motivo se deja a libre elección de la persona que va a resolver el problema.\\
+El principio fundamental de una ecuación de valor, que viene a ser el mismo principio fundamental de las finanzas, establece que la sumatoria de los ingresos debe ser igual a la sumatoria de los egresos ubicados ambos en la período focal, esto es:
+
+\begin{center}
+   $\sum ingresos = \sum egresos(en\ la\ pf)$\\
+\end{center}
+Naturalmente, para el traslado de cada una de las cantidades a la período focal, debe hacerse usando la fórmula de valor futuro.\\
+El enunciado de una ecuación de equivalencia también puede ser expresado así:
+
+\begin{center}
+   $\sum deudas = \sum pagos(en\ la\ pf)$\\
+\end{center}
+
+Mirando un balance el principio puede ser expresado así:\\
+
+\begin{center}
+   $\sum activos = \sum pasivos + capital(en\ la\ pf)$\\
+\end{center}
+
+Como en cualquier proyecto, los ingresos se representan por flechas hacia arriba y los egresos por flechas hacia abajo, entonces, mirando la gráfica de flujo de caja podemos expresar el principio fundamental de una ecuación de equivalencia de flujos de esta otra forma:\\
+
+\begin{center}
+   $\sum de\ lo\ que\ $\textit{está}$\ para\ arriba = \sum de\ lo\ que\ $\textit{está}$\ para\ abajo(en\ la\ pf)$\\
+\end{center}
+
+La sumatoria de los ingresos en pesos de hoy menos la sumatoria de los egresos en pesos de hoy recibe el nombre de valor presente neto (VPN) o valor actual neto.\\
+La tasa a la cual la sumatoria de los ingresos (VPN) es igual a la sumatoria de los egresos (en la período focal) se denomina tasa interna de retorno (TIR).\\
+En el capítulo posterior analizaremos con más detalle los conceptos de VPN y TIR, estos conceptos son de suma importancia en la evaluación de proyectos.\\
+
+\input{2_Capitulo/ejemplos/11/11}
+\input{2_Capitulo/ejemplos/12/12}
+\input{2_Capitulo/ejemplos/13/13}
+%\input{2_Capitulo/ejemplos/14/14}
+%\input{2_Capitulo/ejemplos/15/15}
+\input{2_Capitulo/ejemplos/14/14}

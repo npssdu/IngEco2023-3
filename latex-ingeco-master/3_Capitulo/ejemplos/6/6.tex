@@ -1,0 +1,110 @@
+\newpage
+\textbf{Ejemplo 6}\\
+Una industria tiene actualmente contratado un préstamo con una
+corporación financiera a la tasa del TCC+3 puntos. ¿Cuál debe ser el spread
+en puntos básicos de forma tal que financiera mente sea indiferente el
+préstamo en la corporación financiera o en el mercado de Londres? con
+estos índices:\\ \\
+\begin{itemize}
+ \item $TCC = 15,3\% \textit{ nata}$
+ \item $i_{dev} = 22\% \textit{ naav}$
+\end{itemize}
+Interés devaluación del peso Colombiano con respecto a la libra esterlina Libor
+\begin{itemize}
+ \item  $Libor= 5,2\% \textit{ naav}$. Tasa de interés del mercado europeo
+\end{itemize}
+%\newpage %USAR SOLO SI EL SOLUCIÓN QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAGINA
+\textbf{Solución.}\\
+%La tabla ira centrada
+\begin{center}
+ \renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+ %Creación de la cuadricula de 3 columnas
+ \begin{longtable}[H]{|p{0.375\linewidth}|p{0.375\linewidth}|p{0.1\linewidth}|}
+  %Creamos una linea horizontal
+  \hline
+  %Definimos el color de la primera fila
+  \rowcolor[HTML]{FFB183}
+  %%%%% INICIO ASIGNACIÓN FECHA FOCAL %%%%%%%
+  %%%%%%%%%% INICIO TITULO
+  %Lo que se hace aquí es mezclar las 3 columnas en una sola
+  \multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}   \\ \hline
+  %%%%%%%%%% FIN TITULO
+  \multicolumn{3}{|c|}{$pf=1 \textit{ pav}$}                                         \\ \hline
+  %%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+  %%%%%%%%%% INICIO TITULO
+  %Lo que se hace aquí es mezclar las 3 columnas en una sola
+  \multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}} \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO DE MATEMÁTICAS
+  %Cada & hace referencia al paso de la siguiente columna
+  \multicolumn{2}{|C{0.75\linewidth}|}{$TCC = 15,3\% \textit{ nata}$}   & $X=?$      \\
+  \multicolumn{2}{|C{0.75\linewidth}|}{$i_{dev} = 22\% \textit{ naav}$} &            \\
+  \multicolumn{2}{|C{0.75\linewidth}|}{$Libor = 5,2\% \textit{ naav}$}  &            \\ \hline
+
+  %%%%%%%%%% FIN DE MATEMÁTICAS
+  %%%%% FIN DECLARACIÓN DE VARIABLE
+
+
+  %%%%% INICIO DECLARACIÓN FORMULAS
+  %%%%%%%%%%% INICIO TITULO
+  \rowcolor[HTML]{FFB183}
+  \multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Declaración de fórmulas}}  \\ \hline
+  %%%%%%%%%%% FIN TITULO
+  %%%%%%%%%%% INICIO MATEMÁTICAS
+
+  \multicolumn{3}{|c|}{$i_{dev} + Libor + X = TCC + 3 \textit{ Ecuación de valor}$}  \\ \hline
+  %%%%%%%%%% FIN MATEMÁTICAS
+  %%%%%% INICIO DESARROLLO MATEMÁTICO
+  \rowcolor[HTML]{FFB183}
+  %%%%%%%%%%INICIO TITULO
+  \multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Desarrollo matemático}}    \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO MATEMÁTICAS
+  \multicolumn{3}{|p{\textwidth}|}{
+  $TCC + 3 puntos = 15,3\% \hspace{1mm} nata + 3\% \hspace{1mm} nata = 18,3\% \hspace{1mm} nata$
+
+  $j_{crédito} = TCC + 3 puntos = 15,3\% \hspace{1mm} nata + 3\% \hspace{1mm} nata = 18,3\% \hspace{1mm} nata$
+
+  $i = i_1 + i_2 + i_1 \cdot i_2 $ Equivalencia de tasas de referencia
+
+  $j_c = 18,3\% \hspace{1mm} nata$
+
+  $j_c =? naav$ en Londres
+
+  $18,3\% \hspace{1mm} nata = 20,601\%naav$
+
+  \vspace{4mm}
+  Teniendo la tasa periódica vencida utilizamos la fórmula de las tasas equivalentes
+  \vspace{1mm}
+
+  $(1 + i_1)^{m_1} = (1 + i_2)^{m_2}, donde \hspace{1mm} m_1 = 1 \hspace{1mm} pav$
+
+  $(1 + i_1)^1 = (1 + 0,183)^4$
+
+  $i_{dev} + Libor + X = 22\% + (5,2 + X)\%$
+
+  Crédito equivalente = $22\% naav + (Libor + X)\%naav =? \%naav$
+
+  \vspace{4mm}
+  Por la formula de combinación de tasas, por ser tasas naav
+  \vspace{1mm}
+  $0,28344 + 0,0122 + X = 0,20601$ (Despejar la X)
+  $X = -6,35\%$
+  }                                                                                  \\ \hline
+  %%%%%%%%%% FIN MATEMÁTICAS
+  %%%%%% FIN DESARROLLO MATEMÁTICO
+  %%%%%% INICIO RESPUESTA
+  \rowcolor[HTML]{FFB183}
+  %%%%%%%%%%INICIO TITULO
+  \multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Respuesta}}                \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO RESPUESTA MATEMÁTICA
+  \multicolumn{3}{|C{\textwidth}|}{
+  X = -6,35\%
+  }                                                                                  \\ \hline
+  %%%%%%%%%% FIN MATEMÁTICAS
+  %%%%%% FIN RESPUESTA
+ \end{longtable}
+ %Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+ %\newline \newline %USARLO SI CREES QUE ES NECESARIO
+\end{center}

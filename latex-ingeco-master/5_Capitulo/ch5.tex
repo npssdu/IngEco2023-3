@@ -1,0 +1,115 @@
+
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+\part{Capítulo cinco}
+
+\graphicspath{ {img/ch5/}, {W_Varios/2_Portada_capitulos} }
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 5
+%----------------------------------------------------------------------------------------
+
+\chapterimage{5_Capitulo/img/portada/ima2} % Chapter heading image
+\chapter{Series unif. diferidas, perpetuas y generales}
+\section{Mapa Mental}
+\begin{center}
+	\includegraphics[scale=0.45]{5_Capitulo/img/explicacion/Mapa Mental 5.pdf}
+\end{center}
+\section{Fórmulas del capítulo}
+
+\begin{spacing}{1.5}
+	\begin{center}
+		\begin{tabular}{ |p{4cm}|p{7cm}| p{3cm}|}
+			\hline
+			\rowcolor{orange!50}
+			\begin{center}\textbf{Fórmula}\end{center}        & \begin{center}\textbf{Nombre}\end{center}                    & \begin{center} \textbf{Excel}\end{center} \\ \hline
+			
+			$VP = \frac{R}{i}$               & Valor presente serie perpetua vencida        & VA(i;10000;-R;;0)         \\ \hline
+			$VP = R(\frac{1-(1+i)^{-n}}{i})$ & Valor presente de una serie uniforme vencida &                           \\ \hline
+		\end{tabular}
+	\end{center}
+\end{spacing}
+
+\section{Series uniformes diferidas}
+Una serie uniforme es inmediata cuando el primer pago se encuentra en el primer período, si el pago se encuentra después de cierta cantidad de períodos se llama serie uniforme diferida: \\
+
+\input{5_Capitulo/ejemplos/1/1}
+
+
+\section{Series uniformes perpetuas}
+
+Una serie uniforme que tiene infinito número de pagos se denomina serie uniforme perpetua. Una serie perpetua en la realidad no existe, ya que todo tiene su fin; se supone perpetua cuando el número de pagos o ingresos es muy grande o cuando no se sabe cuántos pagos son, pero se sospecha que son muchos.\\
+
+Al deducir la fórmula de una serie uniforme vencida perpetua, debe tenerse en cuenta que solo existe el valor presente, porque el valor futuro de una serie uniforme vencida perpetua sería un valor bastante grande.\\
+
+$ VP = \lim_{n\to \infty}R\frac{1-(1+i)^{-n}}{i} = \lim_{n\to \infty} R\frac{1-0}{i} = \frac{R}{i}$\\
+
+$ VP = \frac{R}{i}$ \hspace{35pt}\textit{Valor presente de una serie uniforme vencida perpetua}\\ \\
+
+\input{5_Capitulo/ejemplos/2/2}
+
+
+\section{Series uniformes generales}
+
+Una serie uniforme simple es aquella donde el período de interés coincide con el período de pago. Por el contrario en una serie uniforme general el período de pago no coincide con el período de interés, por ejemplo, una serie de pagos trimestrales con una tasa periódica semestral.\\
+
+Una serie uniforme general puede ser reducida a una serie uniforme simple, si hacemos que los períodos de tiempo y los períodos de interés coincidan. Hay dos formas para realizarlo:\\
+
+\begin{enumerate}
+	\item Encontrar el valor de pagos que se hicieron al final de cada período de interés y sean equivalentes al pago único que se hace al final de un período de pago.
+	\item Cambiar la tasa usando tasas de equivalencia, dando lugar a que coincidan los períodos de interés y de pago.\\
+\end{enumerate}
+
+\input{5_Capitulo/ejemplos/3/3}
+
+\newpage
+
+\input{5_Capitulo/ejemplos/4/4}
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+%\part{Parte Dos}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 3
+%----------------------------------------------------------------------------------------
+
+%\chapterimage{ima2} % Chapter heading image
+
+
+%Anexos
+%\chapter*{Anexos}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Anexos}}
+
+
+
+
+%----------------
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\chapter*{Bibliografía}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliografía}}
+%\section*{Books}
+%\addcontentsline{toc}{section}{Books}
+%\printbibliography[heading=bibempty,type=book]
+
+
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\printindex
+
+%----------------------------------------------------------------------------------------

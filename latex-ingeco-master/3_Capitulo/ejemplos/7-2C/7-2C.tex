@@ -1,0 +1,123 @@
+
+c) Para 10 días antes del vencimiento:
+
+%La tabla ira centrada
+\begin{center}
+ \renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+ %Creación de la cuadricula de 3 columnas
+ \begin{longtable}[H]{|p{0.5\linewidth}|p{0.5\linewidth}|}
+  %Creamos una linea horizontal
+  \hline
+  %Definimos el color de la primera fila
+  \rowcolor[HTML]{FFB183}
+  %%%%% INICIO ASIGNACIÓN FECHA FOCAL %%%%%%%
+  %%%%%%%%%% INICIO TITULO
+  %Lo que se hace aquí es mezclar las 3 columnas en una sola
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}                   \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+  \multicolumn{2}{|c|}{$pf = 10 \textit{ pdv}$}                                                      \\ \hline
+  %%%%%%%%%% INICIO TITULO
+  %Lo que se hace aquí es mezclar las 3 columnas en una sola
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}                 \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO DE MATEMÁTICAS
+  %Cada & hace referencia al paso de la siguiente columna
+  $F =  100 \ COP$                   & $P_r = ? \ COP$                                                            \\
+  $n  = \frac{10}{365} = 0.247\% \ pdv$     & $P_v=?\ COP$                                                             \\
+  $i_r = 30\%\textit{ pdv}  $  & $i_v=?\% $                                                             \\
+  $com_v = 0,5\%\textit{ pdv}$ &    $i_{r}+comv = P_{v}$                                                                 \\ \hline
+  %%%%%%%%%% FIN DE MATEMÁTICAS
+  %%%%% FIN DECLARACIÓN DE VARIABLES
+
+
+  %%%%% INICIO FLUJO DE CAJA
+  \rowcolor[HTML]{FFB183}
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}}                \\ \hline
+ \multicolumn{2}{|c|}{ \includegraphics[trim=-78 -5 -78 -5]{3_Capitulo/img/ejemplos/7/capitulo3ejercicio7a3.pdf} }  \\ \hline
+  %%%%%% FIN FLUJO DE CAJA
+
+%%%%% INICIO DECLARACIÓN FORMULAS
+  \rowcolor[HTML]{FFB183}
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de formulas}}                  \\ \hline
+  \multicolumn{2}{|C{\textwidth}|}{
+  $F = P(1 + i)^n $ \hspace{2mm} Valor futuro 
+  
+  $I_r$ para calcular $p_r$    
+
+  $i_r$ comv para calcular $p_c$
+
+  $V_v=?$
+  }
+  \\ \hline
+  %%%%% FIn  DECLARACIÓN FORMULAS
+  \rowcolor[HTML]{FFB183}
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}                    \\ \hline
+  %Mezclamos 3 columnas y pondremos el dibujo
+  %%%%%%%%%%%%% INSERCIÓN DE LA IMAGEN
+  %Deberán descargar las imágenes respectivas del drive y pegarlas en la carpeta
+  %n_capitulo/img/ejemplos/1/capitulo1ejemplo1.pdf  (el /1/ es el numero del ejemplo)
+  \multicolumn{2}{|C{\linewidth}|}{
+
+  $P_r =   100 \ COP (1 + 0,30)^\frac{-10}{365} = 99,2838\% \equiv 4{.}964{.}190 \ COP$
+
+  $i_v = 0,5\% \hspace{1mm} pdv + 30\%\hspace{1mm}pdv = 30,5\% \hspace{1mm}pdv$
+
+  $Pv =  100\ COP(1 + 0, 3050)^\frac{-10}{365}= 99,2733\% \equiv  4{.}963{.}665\ COP $
+
+  }                                                                                                  \\ \hline
+
+  %%%%% INICIO DECLARACIÓN FORMULAS
+  %%%%%%%%%%% INICIO TITULO
+  \rowcolor[HTML]{FFB183}
+
+  %%%%%% INICIO RESPUESTA
+  \rowcolor[HTML]{FFB183}
+  %%%%%%%%%%INICIO TITULO
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}                                \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO RESPUESTA MATEMÁTICA
+  \multicolumn{2}{|C{\textwidth}|}{
+  \newline
+  $Pr =  4{.}964{.}190\ COP$
+
+  $iv = 30, 5\% \hspace{1mm} pdv$
+
+  $Pv =  4{.}963{.}665 \ COP$
+
+  $P_v = 97,1248\% < p_r = 97,165\%$
+  \newline
+  }                                                                                                  \\ \hline
+  %%%%%%%%%% FIN MATEMÁTICAS
+
+  
+  %%%%%% FIN RESPUESTA
+ \end{longtable}
+ %Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+ %\newline \newline %USARLO SI CREES QUE ES NECESARIO
+
+\end{center}\
+
+\begin{center}
+ \textbf{Tabla resumen para el vendedor}
+\end{center}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5} % Ajusta la altura de la tabla
+\setlength{\tabcolsep}{1pt} % Ajusta el espaciado de las columnas
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{} & \multicolumn{3}{|c|}{\textbf{Mercado no bursátil}}  & \multicolumn{3}{|c|}{\textbf{Mercado bursátil}} \\
+\cline{2-7}
+& \textbf{90 DÍAS} & \textbf{40 DÍAS} & \textbf{10 DÍAS} & \textbf{90 DÍAS} & \textbf{40 DÍAS} & \textbf{10 DÍAS} \\
+\cline{1-7}
+\textbf{Tasa} & 30\% pdv & 30\% pdv & 30\% pdv & 30,5\% pdv & 30,5\% pdv & 30,5\% pdv \\
+\hline
+\textbf{Precio} & 93,73\% COP & 97,16\% COP & 99,28\% COP & 93,64\% COP & 97,12\% COP & 99,27\% COP \\
+\hline
+\textbf{Valor} & 4.650.000COP & 4.850.000COP & 4.950.000COP & 4.682.345COP & 4.856.240COP & 4.963.665COP \\
+\hline
+\textbf{Comisión} & 0\% pdv & 0\% pdv & 0\% pdv & 0,5\% pdv & 0,5\% pdv & 0,5\% pdv \\
+\hline
+\end{tabular}
+\end{center}

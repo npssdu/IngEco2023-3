@@ -1,0 +1,80 @@
+\part{Capítulo doce}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 12
+%----------------------------------------------------------------------------------------
+\graphicspath{ {12_Capitulo/img/ejemplos/}, {W_Varios/2_Portada_capitulos/} }
+
+\chapterimage{ima2} % Chapter heading image
+
+
+\chapter{Relación Beneficio/Costo}
+
+\section{Mapa Mental}
+
+\begin{center}
+   \includegraphics[height=6cm]{Mapa Mental 12.1.pdf}
+\end{center} 
+
+
+\section{Formulas de los capítulos}
+
+\begin{spacing}{1.5}
+	\begin{center}
+		\begin{tabular}{ |p{4cm}|p{7cm}| p{4cm}|}
+			\hline
+			\rowcolor{orange!50}
+			\begin{center}\textbf{Fórmula} \end{center} & \begin{center} \textbf{Nombre}\end{center}             & \begin{center} \textbf{Excel} \end{center}             \\ \hline
+			
+			B/C = $\frac{VPN}{VPC}$   & Relación Beneficio/Costo              & B/C = beneficio / (costo + Inversión) \\ \hline
+			
+			VP = $\frac{R}{i}$        & Valor Presente Serie Perpetua Vencida &                                       \\ \hline
+		\end{tabular}
+	\end{center}
+\end{spacing}
+
+\section{Introducción}
+La relación Beneficio/Costo (B/C), consiste en poner en valor presente los beneficios netos y dividirlos por el valor presente de todos los costos del proyecto. La tasa que se utilice para poner en valor presente, tanto los beneficios como los costos, depende de quien lleve a cabo el proyecto, si el proyecto es particular se utiliza la tasa del inversionista, pero si éste es estatal se puede usar la tasa de interés social (que es más baja lo cual hace que la aceptación sea mas probable), de acuerdo a lo anterior podemos plantear la siguiente ecuación:
+
+\begin{equation}
+	B/C = \frac{Valor Presente de Ingresos(VP)}{Valor Presente de Costos(VPC)} \hspace{35pt} \textit{Relación Beneficio Costo (B/C)}
+\end{equation}
+
+La Relación B/C puede por tanto tomar tres valores:
+
+% Incluir grafica 12_1
+\begin{center}
+	\includegraphics[height=3.0cm]{E12_1}
+\end{center}
+
+Si B/C < 1 significa que los ingresos son menores que los costos, por tanto el proyecto no es aconsejable.
+\\
+Si B/C = 1 significa que un valor presente, los ingresos son iguales a los egresos, en éste caso, lo único que se alcanza a ganar es la tasa del inversionista, por lo tanto es indiferente realizar el proyecto o continuar con la inversión que normalmente hace el inversionista.
+\\
+Si B/C  > 1 significa que en valor presente, los ingresos son mayores que los egresos, por lo tanto se aconseja realizar el proyecto.
+\\
+Las entidades crediticias tales como: Banco Mundial, Banco Internacional de Desarrollo, Fondo Monetario Internacional, etc., acostumbran a evaluar sus proyectos de inversión mediante la Relación B/C y adicionalmente con otro índice que generalmente es el VPN(Valor Presente Neto). Por esto es de gran importancia que cualquier proyecto que debido a su tamaño necesite financiación internacional sea evaluado con la Relación B/C.
+
+\section{Beneficios, déficit , ventajas y desventajas en los proyectos}
+
+Por lo general, los grandes proyectos son propiedad del estado y producen un beneficio para la sociedad,pero a su vez también pueden causar perdidas a las que llamaremos déficit  o desventajas y los costos del proyecto son los dineros invertidos por el estado.
+\\
+Es importante aclarar que el beneficio neto se representara con la letra B, es decir el beneficio menos el déficit. Para facilitar la identificación de las cantidades que corresponden a beneficios, déficit  y costos, podemos asumir, que en proyectos estatales, el que recibe los beneficios es la sociedad, el que recibe los déficit  también es la sociedad y el que hace los gastos es el estado. En proyectos particulares, el dueño del proyecto es quién recibe los beneficios, los déficit  y a su vez es el que hace sus gastos.
+\\
+
+\input{12_Capitulo/ejemplos/1/1}
+
+
+\section{Relación B/C Y VPN}
+Ocasionalmente se puede presentar una inconsistencia cuando se evalúan alternativas con la Relación B/C y con el VPN, en tales circunstancias el error debe estar en la Relación B/C causado por un incorrecto cálculo de los beneficios, entonces, se debe analizar lo que pasa con el exceso de inversión, es decir, que debe aplicarse el método incremental en la Relación B/C.
+\\
+
+\input{12_Capitulo/ejemplos/2/2}
+
+
+\section{Periodo de recuperación}
+El Período de Recuperación, PR, es otro índice utilizado para medir la bondad de un proyecto, sin embargo este ha venido perdiendo popularidad dandole paso al VPN y a la TIR que son mucho más exactos. El PR es el tiempo que debe utilizarse para recuperar la inversión, sin tener en cuenta los intereses; Por ejemplo, si se invierten  COP 600.000 en un proyecto que produce  COP 200.000 anuales durante 8 años, entonces se necesitarán 3 años para recuperar la inversión inicial (3 x 200.000 = 600.000) y, de ahí en adelante, lo que se produzca se considera ganancia. Si el propietario del proyecto considera que 3 años es un tiempo razonable para recuperar la inversión, el proyecto será aceptado, pero si considera que no puede esperar tanto tiempo, el proyecto será rechazado.\\
+
+Entre las fallas técnicas que presenta el PR está la de no tomar en cuenta el valor del dinero a través del tiempo y la de no tomar en cuenta el flujo de caja después de la recuperación de los dineros invertidos. En el siguiente ejemplo, se podrán observar estas fallas.\\
+
+\input{12_Capitulo/ejemplos/3/3}

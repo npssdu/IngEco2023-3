@@ -1,0 +1,70 @@
+%%%%%%%%%%%%%%%%%%% EJERCICIO 2 %%%%%%
+\input{7_Capitulo/ejemplos/2/2a}
+\newpage
+Ahora elaboramos la tabla sin tener en cuenta ninguna cuota extra ya que no se han pactado.
+
+\begin{spacing}{1.1}
+	\begin{center}
+		\begin{tabular}{|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{3cm}|}
+			\hline
+			\textbf{PER\ (1)} & \textbf{SALDO DEUDA (2)=(2)-(5)} & \textbf{INTERESES  (3)=(2)(i)} & \textbf{PAGO\ (4)= COP  R- COP  L } & \textbf{AMORTIZACIÓN  (5)=(4)-(3)} \\ \hline
+			
+			0                 &   600.000 \ COP                     & ---------                       & ---------                   & ---------                          \\ \hline
+			1                 &   534.785,69 \ COP                     &  54.000,00 \ COP                    &  119.214,31 \ COP                &  65.214,31 \ COP                        \\ \hline
+			2                 &  463.702,09 \ COP                     &  48.130,71 \ COP                    &  119.214,31 \ COP                &    71.083,60 \ COP                        \\ \hline
+			3                 &  386.220,97 \ COP                     &  41.733,19 \ COP                     &  119.214,31 \ COP                &   77.481,12 \ COP                        \\ \hline
+			4                 &  301.766,55 \ COP                     &  34.759,88 \ COP                     &  119.214,31 \ COP                &  84.454,42 \ COP                        \\ \hline
+			5                 &  209.711,23 \ COP                     &  27.158,99 \ COP                     &  119.214,31 \ COP                &   92.055,32 \ COP                        \\ \hline
+			6                 &  109.370,93 \ COP                     &  18.874,01 \ COP                     &  119.214,31 \ COP                &  100.340,30 \ COP                       \\ \hline
+			7                 &  0,00 \ COP                           &  9.843,38 \ COP                      &  119.214,31 \ COP                &  109.370,93 \ COP                       \\ \hline
+		\end{tabular}
+	\end{center}
+\end{spacing}
+
+La primera forma se puede presentar cuando, al cancelar la tercera cuota, el deudor decide efectuar un abono de    250.000 \ COP, adicional a su cuota ordinaria periódica, entonces la tabla quedará así:
+\begin{spacing}{1.1}
+	\begin{center}
+		\begin{tabular}{|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{3cm}|}
+			\hline
+			\textbf{PER\ (1)} & \textbf{SALDO DEUDA (2)=(2)-(5)} & \textbf{INTERESES  (3)=(2)(i)} & \textbf{PAGO\ (4)= COP  R- COP  L } & \textbf{AMORTIZACIÓN  (5)=(4)-(3)} \\ \hline
+			
+			0                 &  600.000,00 \ COP                     & ---------                       & ---------                   & ---------                          \\ \hline
+			1                 &  534.785,69 \ COP                     &  54.000,00 \ COP                    &  119.214,31 \ COP                &  65.214,31 \ COP                        \\ \hline
+			2                 &  463.702,09 \ COP                     &  48.130,71 \ COP                    &  119.214,31 \ COP                &  71.083,60 \ COP                        \\ \hline
+			3                 &  136.220,97 \ COP                     &  41.733,19 \ COP                     &  369.214,31 \ COP                &  327.481,12 \ COP                       \\ \hline
+			4                 &  29.266,55 \ COP                      &  12.259,89 \ COP                     &  119.214,31 \ COP                &  106.954,42 \ COP                       \\ \hline
+			5                 &  0,00 \ COP                           &  2.633,99 \ COP                      &  31.900,54 \ COP                 &  29.266,55 \ COP                        \\ \hline
+		\end{tabular}
+	\end{center}
+\end{spacing}
+
+El pago del período 5 debe ser igual a los intereses más el saldo de la deuda, esto es:
+\begin{center}
+	 2.633,99 \ COP +  29.266,55 \ COP=  31.900,40 \ COP
+\end{center}
+Obsérvese que la deuda se canceló antes de lo previsto.\\
+
+\input{7_Capitulo/ejemplos/2/2b}
+
+Y la tabla debe ser modificada así:
+
+\begin{spacing}{1.1}
+	\begin{center}
+		\begin{tabular}{|p{1cm}|p{2cm}|p{2cm}|p{2cm}|p{3cm}|}
+			\hline
+			\textbf{PER\ (1)} & \textbf{SALDO DEUDA (2)=(2)-(5)} & \textbf{INTERESES  (3)=(2)(i)} & \textbf{PAGO\ (4)= COP  R- COP  L } & \textbf{AMORTIZACIÓN  (5)=(4)-(3)} \\ \hline
+			
+			0                 &  600.000,00 \ COP                     & ---------                       & ---------                   & ---------                          \\ \hline
+			1                 &  534.785,69 \ COP                     &  54.000,00 \ COP                    &  119.214,31 \ COP                &  65.214,31 \ COP                        \\ \hline
+			2                 &  463.702,09 \ COP                     &  48.130,71 \ COP                    &  119.214,31 \ COP                &  71.083,60 \ COP                        \\ \hline
+			3                 &  136.220,97 \ COP                     &  41.733,19 \ COP                     &  369.214,31 \ COP                &  327.481,12 \ COP                       \\ \hline
+			4                 &  106.433,72 \ COP                     &  12.259,89 \ COP                     &  42.047,14 \ COP                 &  29.787,25 \ COP                        \\ \hline
+			5                 &  73.965,61 \ COP                      &  9.579,03 \ COP                      &  42.047,14 \ COP                 &  32.468,11 \ COP                        \\ \hline
+			6                 &  38.575,37 \ COP                      &  6.656,90 \ COP                      &  42.047,14 \ COP                 &  35.390,24 \ COP                        \\ \hline
+			7                 &  0,00 \ COP                           &  3.471,77 \ COP                      &  42.047,14 \ COP                 &  38.575,37 \ COP                        \\ \hline
+		\end{tabular}
+	\end{center}
+\end{spacing}
+
+Observe que la cuota ordinaria baja de  119.214,31 \ COP a  42.047,14 \ COP pero se mantiene el plazo originalmente pactado.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%

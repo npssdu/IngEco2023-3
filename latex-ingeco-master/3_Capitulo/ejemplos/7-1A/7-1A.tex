@@ -1,0 +1,97 @@
+
+\textbf{Ejemplo 7}\\
+Un fabricante o proveedor de bicicletas recibe un pedido de compra de 50 unidades para un almacén por valor de 5 millones COP, pero el almacén pide un plazo de 90 días para pagar. El fabricante o proveedor acepta el pedido, pero solicita que una entidad financiera garantice el pago futuro, por tal motivo el dueño del almacén se dirige a su banco y le solicita que expida una aceptación bancaria por 5 millones COP con vencimiento en 90 días, el banco le entrega al almacén la aceptación y este se la entrega al fabricante o proveedor, este último puede guardar la aceptación y cobrarla al banco a su vencimiento o puede negociarla en el mercado secundario. Si el fabricante necesita el dinero deberá vender la aceptación, la podrá vender en el mercado no bursátil, donde no pagará a comisionistas de bolsa, o al mercado bursátil (bolsa de valores) a través de un comisionista de bolsa que cobra una comisión por sus servicios. Cuando la fecha de la aceptación se termine, el dueño del almacén deberá pagar al banco. El banco deberá pagar la aceptación al tenedor de la aceptación, así sea que el almacén pague al banco o no.
+\\ \\
+Calcular el precio de venta (en porcentaje) y el valor de venta de la aceptación, en el mercado extra bursátil (fuera de bolsa) y bursátil (en la bolsa) cediendo una rentabilidad del 30\% pdv (tasa de registro bursátil). Para el caso bursátil, el comisionista vendedor cobra una comisión del 0,5\% pdv. Tomar el año de 365 días. Calcular los valores faltando los siguientes días al vencimiento:
+\\ \\
+Calcular:\\
+    a) 90 días al vencimiento\\
+    b) 40 días al vencimiento \\
+    c) 10 días al vencimiento \\
+\includegraphics[trim=-5 -5 -5 -5 , scale=0.55]{7/Capitulo3ejercicio7.pdf}\newline
+%\newpage %USAR SOLO SI EL SOLUCIÓN QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAG
+\newpage
+\textbf{Solución.}\\
+
+\begin{center}
+ \textbf{Primera opción (Mercado extra bursátil)}\\
+\end{center}
+a) Para 90 días antes del vencimiento:
+%La tabla ira centrada
+\begin{center}
+ \renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+ %Creación de la cuadricula de 3 columnas
+ \begin{longtable}[H]{|p{0.5\linewidth}|p{0.5\linewidth}|}
+  %Creamos una linea horizontal
+  \hline
+  %Definimos el color de la primera fila
+  \rowcolor[HTML]{FFB183}
+  %%%%% INICIO ASIGNACIÓN FECHA FOCAL %%%%%%%
+  %%%%%%%%%% INICIO TITULO
+  %Lo que se hace aquí es mezclar las 3 columnas en una sola
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}                   \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+  \multicolumn{2}{|c|}{$pf = \frac{90}{365} \textit{ pdv}$}                                          \\ \hline
+  %%%%%%%%%% INICIO TITULO
+  %Lo que se hace aquí es mezclar las 3 columnas en una sola
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}                 \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO DE MATEMÁTICAS
+  %Cada & hace referencia al paso de la siguiente columna
+  $F =   100\ COP$                           & $V_{v} =\ ?\ COP  $                                               \\
+  $i  = 30\%\textit{pdv}$              &                                                            \\
+  $n = \frac{90}{365} = 0.246\ pdv  $ &    $P_{v} =  \ ?\ COP  $                                           
+  \\ \hline
+  %%%%%%%%%% FIN DE MATEMÁTICAS
+  %%%%% FIN DECLARACIÓN DE VARIABLES
+
+
+  %%%%% INICIO FLUJO DE CAJA
+  \rowcolor[HTML]{FFB183}
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}}                \\ \hline
+\multicolumn{2}{|c|}{ \includegraphics[trim=-78 -5 -78 -5]{3_Capitulo/img/ejemplos/7/capitulo3ejercicio7a.pdf} }   \\ \hline
+
+
+  %%%%%% FIN FLUJO DE CAJA
+  %%%%% INICIO DECLARACIÓN FORMULAS
+  \rowcolor[HTML]{FFB183}
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de formulas}}                  \\ \hline
+  \multicolumn{2}{|c|}{ $F = P(1 + i)^n $ \hspace{2mm} Valor futuro }                                \\ \hline
+  %%%%% FIN DECLARACIÓN FORMULAS
+  %%%%%%%%%%% INICIO TITULO
+  \rowcolor[HTML]{FFB183}
+
+  %%%%%%%%%%INICIO TITULO
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}                    \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO MATEMÁTICAS
+  \multicolumn{2}{|C{\linewidth}|}{
+  \newline
+  $P_{v} = 100\ COP (1 + 0,3)^\frac{-90}{365} =  93,73\  COP $
+ 
+  $V_v = ( 5{.}000{.}000)\ 0,97 = 4{.}858{.}285 \ COP $ 
+  \newline
+  }                                                                                   \\ \hline
+
+  %%%%%%%%%% FIN MATEMÁTICAS
+  %%%%%% FIN DESARROLLO MATEMÁTICO
+  %%%%%% INICIO RESPUESTA
+  \rowcolor[HTML]{FFB183}
+  %%%%%%%%%%INICIO TITULO
+  \multicolumn{2}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}                                \\ \hline
+  %%%%%%%%%% FIN TITULO
+  %%%%%%%%%% INICIO RESPUESTA MATEMÁTICA
+  \multicolumn{2}{|C{\textwidth}|}{
+  $V_v=  $4{.}650{.}000 \ COP
+
+  }                                                                                                  \\ \hline
+
+
+  %%%%%%%%%% FIN MATEMÁTICAS
+  %%%%%% FIN RESPUESTA
+  
+ \end{longtable}
+ %Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+ %\newline \newline %USARLO SI CREES QUE ES NECESARIO
+\end{center}
